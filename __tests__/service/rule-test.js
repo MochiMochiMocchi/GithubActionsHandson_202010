@@ -6,6 +6,7 @@ describe('rule', () => {
     describe('自分がぐーを出した時', () => {
       const myMove = MOVE.rock;
       it('相手がぐーを出した時', () => {
+        // expect(play(myMove, MOVE.rock)).toBe(RESULT.lose)
         expect(play(myMove, MOVE.rock)).toBe(RESULT.draw)
       });
 
